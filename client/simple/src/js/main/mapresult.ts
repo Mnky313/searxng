@@ -49,7 +49,7 @@ listen("click", ".searxng_init_map", async function (this: HTMLElement, event: E
       style: new Style({
         image: new Circle({
           radius: 6,
-          fill: new Fill({ color: "#3050ff" })
+          fill: new Fill({ color: "#f0f" })
         })
       })
     });
@@ -71,8 +71,8 @@ listen("click", ".searxng_init_map", async function (this: HTMLElement, event: E
       const geoLayer = new VectorLayer({
         source: geoSource,
         style: new Style({
-          stroke: new Stroke({ color: "#3050ff", width: 2 }),
-          fill: new Fill({ color: "#3050ff33" })
+          stroke: new Stroke({ color: "#f0f", width: 2 }),
+          fill: new Fill({ color: "#f0f33" })
         })
       });
 
