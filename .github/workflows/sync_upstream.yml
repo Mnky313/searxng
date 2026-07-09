@@ -17,4 +17,3 @@ jobs:
           owner: Mnky313
           base: master
           head: master
-          auto_approve: true
