@@ -379,6 +379,7 @@ def request(query: str, params: "OnlineParams") -> None:
 
     # The vqd value is generated from the query and the UA header. To be able to
     # reuse the vqd value, the UA header must be static.
+    del headers["User-Agent"]
     headers["User-Agent"] = _HTTP_User_Agent
 
     headers["Sec-Fetch-Dest"] = "document"
