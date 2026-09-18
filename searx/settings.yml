@@ -1211,7 +1211,7 @@ engines:
 
   - name: google play apps
     engine: google_play
-    categories: [files, apps]
+    categories: [it, apps]
     shortcut: gpa
     play_categ: apps
     disabled: true
@@ -1516,12 +1516,6 @@ engines:
     disabled: true
     # https://github.com/searxng/searxng/issues/3610
     inactive: true
-
-  - name: library of congress
-    engine: loc
-    shortcut: loc
-    categories: images
-    disabled: true
 
   - name: libretranslate
     engine: libretranslate
