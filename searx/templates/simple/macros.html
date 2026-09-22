@@ -22,7 +22,7 @@
   {%- if result.thumbnail -%}
   {%- set thumb_src = image_proxify(result.thumbnail) -%}
   {{ result_open_link(result.url, classes='thumbnail_link') -}}
-  <img class="thumbnail_bg" src="{{ thumb_src }}" alt="" aria-hidden="true"><img class="thumbnail" src="{{ thumb_src }}" alt="" loading="lazy">{%- if result.length -%}<span class="thumbnail_length">{{ result.length }}</span>{%- endif -%}
+  <img class="thumbnail_bg" src="{{ thumb_src }}" alt="" aria-hidden="true">{%- if result.length -%}<span class="thumbnail_length">{{ result.length }}</span>{%- endif -%}
   {{- result_close_link() -}}
   {%- endif -%}
 {%- endmacro -%}
